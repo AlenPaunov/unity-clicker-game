@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 971ffe1fbb59c5a439c901f3f2b82740
+timeCreated: 1508111573
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Mickey
+  fontNames:
+  - Mickey
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
