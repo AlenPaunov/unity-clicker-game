@@ -37,7 +37,7 @@ public class ItemManager : MonoBehaviour
 		if (click.gold >= cost) {
 			click.gold -= cost;
 			count++;
-			cost = Mathf.Round (baseCost * Mathf.Pow (1.15f, count));
+			cost = Mathf.Round (baseCost * Mathf.Pow (1.07f, count));
 		}
 	}
 

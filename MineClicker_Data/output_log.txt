@@ -17,14 +17,14 @@ Platform assembly: D:\UnityProjects\FirstGame\MineClicker_Data\Managed\UnityEngi
 Loading D:\UnityProjects\FirstGame\MineClicker_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\UnityProjects\FirstGame\MineClicker_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading D:\UnityProjects\FirstGame\MineClicker_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.280 seconds
+- Completed reload, in  0.460 seconds
 Platform assembly: D:\UnityProjects\FirstGame\MineClicker_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\UnityProjects\FirstGame\MineClicker_Data\Managed\System.dll (this message is harmless)
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.548349 ms
+UnloadTime: 25.543047 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 57c -> priority: 1 
-  Thread -> id: 31a4 -> priority: 1 
+  Thread -> id: 1c20 -> priority: 1 
+  Thread -> id: 1244 -> priority: 1 

@@ -2,34 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GoldPerSec : MonoBehaviour {
+public class GoldPerSec : MonoBehaviour
+{
 
 	public UnityEngine.UI.Text goldPerSecondDisplay;
 	public Click click;
-	public ItemManager[]items;
+	public ItemManager[] items;
 
-	void Start(){
+	void Start ()
+	{
 		StartCoroutine (AutoTick ());
 	}
 
-	void Update(){
-		goldPerSecondDisplay.text = GetGoldPerSecond() + " gold/sec";
+	void Update ()
+	{
+		goldPerSecondDisplay.text = CurrencyConverter.Instance.GetCurrencyIntoString (GetGoldPerSecond (), true, false);
 	}
 
-	public float GetGoldPerSecond(){
-		float tick = 0;
-		foreach (		ItemManager item in items) {
+	public float GetGoldPerSecond ()
+	{
+		float tick = 0;	
+		foreach (ItemManager item in items) {
 			tick += item.count * item.tickValue;
 
-				}
+		}
 		return tick;
 	}
 
-	public void AutoGoldPerSecond(){
-		click.gold += GetGoldPerSecond ()/10;
+	public void AutoGoldPerSecond ()
+	{
+		click.gold += GetGoldPerSecond () / 10;
 	}
 
-	IEnumerator AutoTick (){
+	IEnumerator AutoTick ()
+	{
 		while (true) {
 			AutoGoldPerSecond ();
 			yield return new WaitForSeconds (0.10f);

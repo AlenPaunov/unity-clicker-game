@@ -13,8 +13,8 @@ public class Click : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		goldDisplay.text = "Gold: " + gold.ToString("f0");
-		goldPerClickDisplay.text = goldPerClick + " gold/click ";
+		goldDisplay.text = "Gold: " + CurrencyConverter.Instance.GetCurrencyIntoString (gold, false, false);
+		goldPerClickDisplay.text = CurrencyConverter.Instance.GetCurrencyIntoString (goldPerClick,false, true);
 	}
 		
 	public void Clicked ()
